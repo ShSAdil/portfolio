@@ -19,6 +19,8 @@ import {
 import Image from "next/image"
 import Link from "next/link"
 
+const prefix = process.env.NODE_ENV === 'production' ? '/portfolio' : '';
+
 export default function Portfolio() {
   return (
     <div className="min-h-screen bg-background">
@@ -310,14 +312,14 @@ export default function Portfolio() {
                   <div className="bg-gradient-to-br from-purple-50 to-pink-100 p-8 flex items-center justify-center order-2 md:order-1">
                     <div className="grid grid-cols-2 gap-4">
                       <Image
-                        src="/ocr-scanner-1.jpg"
+                        src={`${prefix}/ocr-scanner-1.jpg`}
                         alt="ExpenseWise Dashboard"
                         width={720}
                         height={1400}
                         className="rounded-lg shadow-lg"
                       />
                       <Image
-                        src="/ocr-scanner-2.jpg"
+                        src={`${prefix}/ocr-scanner-2.jpg`}
                         alt="ExpenseWise Budget Screen"
                         width={720}
                         height={1400}
@@ -417,14 +419,14 @@ export default function Portfolio() {
                   <div className="bg-gradient-to-br from-green-50 to-emerald-100 p-8 flex items-center justify-center">
                     <div className="grid grid-cols-2 gap-4">
                       <Image
-                        src="/smart-spend-1.jpg"
+                        src={`${prefix}/smart-spend-1.jpg`}
                         alt="TaskFlow Task Board"
                         width={720}
                         height={1400}
                         className="rounded-lg shadow-lg"
                       />
                       <Image
-                        src="/smart-spend-2.jpg"
+                        src={`${prefix}/smart-spend-2.jpg`}
                         alt="TaskFlow Team Screen"
                         width={720}
                         height={1400}
@@ -441,14 +443,14 @@ export default function Portfolio() {
                   <div className="bg-gradient-to-br from-orange-50 to-amber-100 p-8 flex items-center justify-center order-2 md:order-1">
                     <div className="grid grid-cols-2 gap-4">
                       <Image
-                        src="/resume-maker-1.jpg"
+                        src={`${prefix}/resume-maker-1.jpg`}
                         alt="ExpenseWise Dashboard"
                         width={720}
                         height={1400}
                         className="rounded-lg shadow-lg"
                       />
                       <Image
-                        src="/resume-maker-2.jpg"
+                        src={`${prefix}/resume-maker-2.jpg`}
                         alt="ExpenseWise Budget Screen"
                         width={720}
                         height={1400}
