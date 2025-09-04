@@ -242,7 +242,7 @@ export default function Portfolio() {
             <h2 className="text-3xl font-bold text-center mb-12">Featured Projects</h2>
             <div className="grid gap-12">
               {/* Project 1 */}
-              {/* <Card className="overflow-hidden">
+              <Card className="overflow-hidden">
                 <div className="grid md:grid-cols-2 gap-0">
                   <div className="p-8">
                     <CardHeader className="p-0 mb-6">
@@ -269,7 +269,7 @@ export default function Portfolio() {
                           <Badge variant="outline">Firebase</Badge>
                         </div>
                         <div className="flex gap-3 pt-2">
-                          <Button size="sm" variant="outline" asChild>
+                          {/* <Button size="sm" variant="outline" asChild>
                             <Link href="#" target="_blank">
                               <ExternalLink className="w-4 h-4 mr-2" />
                               Live Demo
@@ -280,7 +280,7 @@ export default function Portfolio() {
                               <Github className="w-4 h-4 mr-2" />
                               Source Code
                             </Link>
-                          </Button>
+                          </Button> */}
                         </div>
                       </div>
                     </CardContent>
@@ -288,15 +288,15 @@ export default function Portfolio() {
                   <div className="bg-gradient-to-br from-amber-50 to-yellow-50 p-8 flex items-center justify-center">
                     <div className="grid grid-cols-2 gap-4">
                       <Image
-                        src="/placeholder.svg?height=300&width=150"
-                        alt="FitTracker Pro Home Screen"
+                        src={`${prefix}/trip-mileage-1.png`}
+                        alt="Trip Mileage Tracker Home Screen"
                         width={720}
                         height={1400}
                         className="rounded-lg shadow-lg"
                       />
                       <Image
-                        src="/placeholder.svg?height=300&width=150"
-                        alt="FitTracker Pro Workout Screen"
+                        src={`${prefix}/trip-mileage-2.png`}
+                        alt="Trip Mileage Tracker Trip Detail Screen"
                         width={720}
                         height={1400}
                         className="rounded-lg shadow-lg mt-8"
@@ -304,7 +304,7 @@ export default function Portfolio() {
                     </div>
                   </div>
                 </div>
-              </Card> */}
+              </Card>
 
               {/* Project 2 */}
               <Card className="overflow-hidden">
@@ -313,14 +313,14 @@ export default function Portfolio() {
                     <div className="grid grid-cols-2 gap-4">
                       <Image
                         src={`${prefix}/ocr-scanner-1.jpg`}
-                        alt="ExpenseWise Dashboard"
+                        alt="OCR Scanner Home Screen"
                         width={720}
                         height={1400}
                         className="rounded-lg shadow-lg"
                       />
                       <Image
                         src={`${prefix}/ocr-scanner-2.jpg`}
-                        alt="ExpenseWise Budget Screen"
+                        alt="OCR Scanner Extract Text Screen"
                         width={720}
                         height={1400}
                         className="rounded-lg shadow-lg mt-8"
@@ -420,14 +420,14 @@ export default function Portfolio() {
                     <div className="grid grid-cols-2 gap-4">
                       <Image
                         src={`${prefix}/smart-spend-1.jpg`}
-                        alt="TaskFlow Task Board"
+                        alt="Smart Spend Home Screen"
                         width={720}
                         height={1400}
                         className="rounded-lg shadow-lg"
                       />
                       <Image
                         src={`${prefix}/smart-spend-2.jpg`}
-                        alt="TaskFlow Team Screen"
+                        alt="Smart Spend Transactions Screen"
                         width={720}
                         height={1400}
                         className="rounded-lg shadow-lg mt-8"
@@ -444,14 +444,14 @@ export default function Portfolio() {
                     <div className="grid grid-cols-2 gap-4">
                       <Image
                         src={`${prefix}/resume-maker-1.jpg`}
-                        alt="ExpenseWise Dashboard"
+                        alt="Smart Resume Maker Home Screen"
                         width={720}
                         height={1400}
                         className="rounded-lg shadow-lg"
                       />
                       <Image
                         src={`${prefix}/resume-maker-2.jpg`}
-                        alt="ExpenseWise Budget Screen"
+                        alt="Smart Resume Maker Templates Screen"
                         width={720}
                         height={1400}
                         className="rounded-lg shadow-lg mt-8"
